@@ -4,7 +4,8 @@
   "description": "API em NodeJS com Clean Architecture e TDD - curso Rodrigo Manguinho",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watchAll",
+    "test:staged": "jest",
     "prepare": "husky install"
   },
   "standard": {
@@ -12,7 +13,8 @@
   },
   "lint-staged": {
     "*.js": [
-      "standard --fix"
+      "standard --fix",
+      "npm run test:staged"
     ]
   },
   "repository": {
