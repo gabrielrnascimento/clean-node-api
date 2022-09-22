@@ -4,7 +4,13 @@
   "description": "API em NodeJS com Clean Architecture e TDD - curso Rodrigo Manguinho",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix"
+    ]
   },
   "repository": {
     "type": "git",
@@ -17,6 +23,8 @@
   },
   "homepage": "https://github.com/gabrielrnascimento/clean-node-api#readme",
   "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "standard": "^17.0.0"
   }
 }
