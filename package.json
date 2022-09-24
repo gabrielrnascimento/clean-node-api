@@ -39,6 +39,8 @@
     "standard": "^17.0.0"
   },
   "dependencies": {
-    "@types/jest": "^29.0.3"
+    "@types/jest": "^29.0.3",
+    "@types/validator": "^13.7.6",
+    "validator": "^13.7.0"
   }
 }
