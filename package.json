@@ -41,6 +41,7 @@
   "dependencies": {
     "@types/jest": "^29.0.3",
     "@types/validator": "^13.7.6",
+    "bcrypt": "^5.0.1",
     "validator": "^13.7.0"
   }
 }
